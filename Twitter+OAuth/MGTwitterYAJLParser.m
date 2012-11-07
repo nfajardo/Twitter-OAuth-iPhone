@@ -49,17 +49,23 @@ int MGTwitterYAJLParser_processNumber(void *ctx, const char *numberVal, unsigned
 		NSString *stringValue = [[NSString alloc] initWithBytesNoCopy:(void *)numberVal length:numberLen encoding:NSUTF8StringEncoding freeWhenDone:NO];
 		
 		// if there's a decimal, assume it's a double
+        
+
+        
 		if([stringValue rangeOfString:@"."].location != NSNotFound){
 			NSNumber *doubleValue = [NSNumber numberWithDouble:[stringValue doubleValue]];
 			[self addValue:doubleValue forKey:currentKey];
 		}else{
 			NSNumber *longLongValue = [NSNumber numberWithLongLong:[stringValue longLongValue]];
 			[self addValue:longLongValue forKey:currentKey];
+        
 		}
 		
 		[stringValue release];
 		
-		[self clearCurrentKey];
+		//[self clearCurrentKey];
+        
+
 	}
 	
 	return 1;

@@ -9,11 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "SA_OAuthTwitterController.h"
 
+#define kCellHeight         44
+
 @class SA_OAuthTwitterEngine;
 
 
 @interface OAuthTwitterDemoViewController : UIViewController <SA_OAuthTwitterControllerDelegate> {
 	SA_OAuthTwitterEngine				*_engine;
+    IBOutlet UITableView *table;
+    NSMutableArray *users;
 
 }
 

@@ -179,6 +179,7 @@
 - (NSString *)testService; // help/test
 
 - (NSString *)getDowntimeSchedule; // help/downtime_schedule (undocumented)
+- (NSString *)getCurrentTrends; // current trends
 
 
 #pragma mark Search API methods

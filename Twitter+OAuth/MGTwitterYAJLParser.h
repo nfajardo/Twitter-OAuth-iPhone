@@ -22,6 +22,7 @@
 	NSURL *URL;
 	NSData *json;
 	NSMutableArray *parsedObjects;
+    NSMutableArray *ids;
 	MGTwitterEngineDeliveryOptions deliveryOptions;
 	
 	yajl_handle _handle;

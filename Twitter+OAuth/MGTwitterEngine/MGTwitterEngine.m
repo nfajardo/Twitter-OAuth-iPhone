@@ -37,7 +37,7 @@
 	#endif
 #endif
 
-#define TWITTER_DOMAIN          @"api.twitter.com/1"
+#define TWITTER_DOMAIN          @"api.twitter.com/1.1"
 #if YAJL_AVAILABLE
 	#define TWITTER_SEARCH_DOMAIN	@"search.twitter.com"
 #endif
@@ -918,7 +918,7 @@
 
 - (NSString *)getPublicTimeline
 {
-    NSString *path = [NSString stringWithFormat:@"statuses/public_timeline.%@", API_FORMAT];
+    NSString *path = [NSString stringWithFormat:@"users/show.json?user_id=665763"];
     
 	return [self _sendRequestWithMethod:nil path:path queryParameters:nil body:nil 
                             requestType:MGTwitterPublicTimelineRequest 
@@ -1020,7 +1020,7 @@
         return nil;
     }
     
-    NSString *path = [NSString stringWithFormat:@"statuses/update.%@", API_FORMAT];
+    NSString *path = [NSString stringWithFormat:@"statuses/update.json"];
     
     NSString *trimmedText = status;
     if ([trimmedText length] > MAX_MESSAGE_LENGTH) {
@@ -1134,12 +1134,10 @@
 
 - (NSString *)getFollowersIncludingCurrentStatus:(BOOL)flag
 {
-    NSString *path = [NSString stringWithFormat:@"statuses/followers.%@", API_FORMAT];
+    NSString *path = [NSString stringWithFormat:@"friends/ids.%@?cursor=-1&screen_name=nfajardo", API_FORMAT];
     
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:0];
-    if (!flag) {
-        [params setObject:@"true" forKey:@"lite"]; // slightly bizarre, but correct.
-    }
+
     
     return [self _sendRequestWithMethod:nil path:path queryParameters:params body:nil 
                             requestType:MGTwitterFollowerUpdatesRequest
@@ -1611,7 +1609,7 @@
 
 - (NSString *)getCurrentTrends
 {
-    NSString *path = [NSString stringWithFormat:@"trends/current.%@", API_FORMAT];
+    NSString *path = [NSString stringWithFormat:@"trends/place.json?id=1"];
     
     return [self _sendRequestWithMethod:nil path:path queryParameters:nil body:nil 
                             requestType:MGTwitterSearchCurrentTrendsRequest 

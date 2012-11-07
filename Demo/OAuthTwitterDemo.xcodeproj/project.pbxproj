@@ -34,6 +34,21 @@
 		B5BC1F86101A36F0009820BB /* SA_OAuthTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BC1F83101A36F0009820BB /* SA_OAuthTwitterEngine.m */; };
 		B5BC1F87101A36F0009820BB /* SA_OAuthTwitterController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BC1F85101A36F0009820BB /* SA_OAuthTwitterController.m */; };
 		B5BC2313101A63F2009820BB /* libOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BC2312101A63F2009820BB /* libOAuth.a */; };
+		BB2D459F1649BA9F006EE3C1 /* twitter-bird-light-bgs.png in Resources */ = {isa = PBXBuildFile; fileRef = BB2D459E1649BA9F006EE3C1 /* twitter-bird-light-bgs.png */; };
+		BBEF09941648670500864F80 /* MGTwitterYAJLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEF09891648670500864F80 /* MGTwitterYAJLParser.m */; };
+		BBEF09951648670500864F80 /* MGTwitterStatusesYAJLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEF098B1648670500864F80 /* MGTwitterStatusesYAJLParser.m */; };
+		BBEF09961648670500864F80 /* MGTwitterUsersYAJLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEF098D1648670500864F80 /* MGTwitterUsersYAJLParser.m */; };
+		BBEF09971648670500864F80 /* MGTwitterMessagesYAJLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEF098F1648670500864F80 /* MGTwitterMessagesYAJLParser.m */; };
+		BBEF09981648670500864F80 /* MGTwitterMiscYAJLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEF09911648670500864F80 /* MGTwitterMiscYAJLParser.m */; };
+		BBEF09991648670500864F80 /* MGTwitterSearchYAJLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEF09931648670500864F80 /* MGTwitterSearchYAJLParser.m */; };
+		BBEF09B31648674D00864F80 /* yajl.c in Sources */ = {isa = PBXBuildFile; fileRef = BBEF09A51648674D00864F80 /* yajl.c */; };
+		BBEF09B41648674D00864F80 /* yajl_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = BBEF09A61648674D00864F80 /* yajl_alloc.c */; };
+		BBEF09B51648674D00864F80 /* yajl_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = BBEF09A81648674D00864F80 /* yajl_buf.c */; };
+		BBEF09B61648674D00864F80 /* yajl_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = BBEF09AB1648674D00864F80 /* yajl_encode.c */; };
+		BBEF09B71648674D00864F80 /* yajl_gen.c in Sources */ = {isa = PBXBuildFile; fileRef = BBEF09AD1648674D00864F80 /* yajl_gen.c */; };
+		BBEF09B81648674D00864F80 /* yajl_lex.c in Sources */ = {isa = PBXBuildFile; fileRef = BBEF09AE1648674D00864F80 /* yajl_lex.c */; };
+		BBEF09B91648674D00864F80 /* yajl_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = BBEF09B01648674D00864F80 /* yajl_parser.c */; };
+		BBEF09BA1648674D00864F80 /* yajl_version.c in Sources */ = {isa = PBXBuildFile; fileRef = BBEF09B21648674D00864F80 /* yajl_version.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +119,41 @@
 		B5BC1F84101A36F0009820BB /* SA_OAuthTwitterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SA_OAuthTwitterController.h; sourceTree = "<group>"; };
 		B5BC1F85101A36F0009820BB /* SA_OAuthTwitterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SA_OAuthTwitterController.m; sourceTree = "<group>"; };
 		B5BC2312101A63F2009820BB /* libOAuth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOAuth.a; path = "../Libraries & Headers/libOAuth.a"; sourceTree = "<group>"; };
+		BB2D459E1649BA9F006EE3C1 /* twitter-bird-light-bgs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-bird-light-bgs.png"; sourceTree = "<group>"; };
+		BBEF09881648670500864F80 /* MGTwitterYAJLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterYAJLParser.h; sourceTree = "<group>"; };
+		BBEF09891648670500864F80 /* MGTwitterYAJLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterYAJLParser.m; sourceTree = "<group>"; };
+		BBEF098A1648670500864F80 /* MGTwitterStatusesYAJLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterStatusesYAJLParser.h; sourceTree = "<group>"; };
+		BBEF098B1648670500864F80 /* MGTwitterStatusesYAJLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterStatusesYAJLParser.m; sourceTree = "<group>"; };
+		BBEF098C1648670500864F80 /* MGTwitterUsersYAJLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterUsersYAJLParser.h; sourceTree = "<group>"; };
+		BBEF098D1648670500864F80 /* MGTwitterUsersYAJLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterUsersYAJLParser.m; sourceTree = "<group>"; };
+		BBEF098E1648670500864F80 /* MGTwitterMessagesYAJLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterMessagesYAJLParser.h; sourceTree = "<group>"; };
+		BBEF098F1648670500864F80 /* MGTwitterMessagesYAJLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterMessagesYAJLParser.m; sourceTree = "<group>"; };
+		BBEF09901648670500864F80 /* MGTwitterMiscYAJLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterMiscYAJLParser.h; sourceTree = "<group>"; };
+		BBEF09911648670500864F80 /* MGTwitterMiscYAJLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterMiscYAJLParser.m; sourceTree = "<group>"; };
+		BBEF09921648670500864F80 /* MGTwitterSearchYAJLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterSearchYAJLParser.h; sourceTree = "<group>"; };
+		BBEF09931648670500864F80 /* MGTwitterSearchYAJLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterSearchYAJLParser.m; sourceTree = "<group>"; };
+		BBEF099C1648674D00864F80 /* yajl_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_common.h; sourceTree = "<group>"; };
+		BBEF099D1648674D00864F80 /* yajl_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_gen.h; sourceTree = "<group>"; };
+		BBEF099E1648674D00864F80 /* yajl_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parse.h; sourceTree = "<group>"; };
+		BBEF099F1648674D00864F80 /* yajl_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_version.h; sourceTree = "<group>"; };
+		BBEF09A11648674D00864F80 /* yajl_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_common.h; sourceTree = "<group>"; };
+		BBEF09A21648674D00864F80 /* yajl_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_gen.h; sourceTree = "<group>"; };
+		BBEF09A31648674D00864F80 /* yajl_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parse.h; sourceTree = "<group>"; };
+		BBEF09A41648674D00864F80 /* yajl_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_version.h; sourceTree = "<group>"; };
+		BBEF09A51648674D00864F80 /* yajl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl.c; sourceTree = "<group>"; };
+		BBEF09A61648674D00864F80 /* yajl_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_alloc.c; sourceTree = "<group>"; };
+		BBEF09A71648674D00864F80 /* yajl_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_alloc.h; sourceTree = "<group>"; };
+		BBEF09A81648674D00864F80 /* yajl_buf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_buf.c; sourceTree = "<group>"; };
+		BBEF09A91648674D00864F80 /* yajl_buf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_buf.h; sourceTree = "<group>"; };
+		BBEF09AA1648674D00864F80 /* yajl_bytestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_bytestack.h; sourceTree = "<group>"; };
+		BBEF09AB1648674D00864F80 /* yajl_encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_encode.c; sourceTree = "<group>"; };
+		BBEF09AC1648674D00864F80 /* yajl_encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_encode.h; sourceTree = "<group>"; };
+		BBEF09AD1648674D00864F80 /* yajl_gen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_gen.c; sourceTree = "<group>"; };
+		BBEF09AE1648674D00864F80 /* yajl_lex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_lex.c; sourceTree = "<group>"; };
+		BBEF09AF1648674D00864F80 /* yajl_lex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_lex.h; sourceTree = "<group>"; };
+		BBEF09B01648674D00864F80 /* yajl_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_parser.c; sourceTree = "<group>"; };
+		BBEF09B11648674D00864F80 /* yajl_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parser.h; sourceTree = "<group>"; };
+		BBEF09B21648674D00864F80 /* yajl_version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_version.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +217,8 @@
 		B5901B08101A280800CF32FA /* Twitter+OAuth */ = {
 			isa = PBXGroup;
 			children = (
+				BBEF099A1648674D00864F80 /* yajl-1.0.11 */,
+				BBEF0986164866E400864F80 /* New Group.m Parsers */,
 				B5BC1F81101A36F0009820BB /* SAOAuthTwitterEngine */,
 				B5901B09101A280800CF32FA /* Libraries & Headers */,
 				B5901B1A101A280800CF32FA /* MGTwitterEngine */,
@@ -247,6 +299,7 @@
 		B5901B87101A291A00CF32FA /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				BB2D459E1649BA9F006EE3C1 /* twitter-bird-light-bgs.png */,
 				B5901B8A101A291A00CF32FA /* OAuthTwitterDemoAppDelegate.h */,
 				B5901B8B101A291A00CF32FA /* OAuthTwitterDemoAppDelegate.m */,
 				B5901B8C101A291A00CF32FA /* OAuthTwitterDemoViewController.h */,
@@ -268,6 +321,70 @@
 				B5BC1F85101A36F0009820BB /* SA_OAuthTwitterController.m */,
 			);
 			path = SAOAuthTwitterEngine;
+			sourceTree = "<group>";
+		};
+		BBEF0986164866E400864F80 /* New Group.m Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				BBEF09881648670500864F80 /* MGTwitterYAJLParser.h */,
+				BBEF09891648670500864F80 /* MGTwitterYAJLParser.m */,
+				BBEF098A1648670500864F80 /* MGTwitterStatusesYAJLParser.h */,
+				BBEF098B1648670500864F80 /* MGTwitterStatusesYAJLParser.m */,
+				BBEF098C1648670500864F80 /* MGTwitterUsersYAJLParser.h */,
+				BBEF098D1648670500864F80 /* MGTwitterUsersYAJLParser.m */,
+				BBEF098E1648670500864F80 /* MGTwitterMessagesYAJLParser.h */,
+				BBEF098F1648670500864F80 /* MGTwitterMessagesYAJLParser.m */,
+				BBEF09901648670500864F80 /* MGTwitterMiscYAJLParser.h */,
+				BBEF09911648670500864F80 /* MGTwitterMiscYAJLParser.m */,
+				BBEF09921648670500864F80 /* MGTwitterSearchYAJLParser.h */,
+				BBEF09931648670500864F80 /* MGTwitterSearchYAJLParser.m */,
+			);
+			name = "New Group.m Parsers";
+			sourceTree = "<group>";
+		};
+		BBEF099A1648674D00864F80 /* yajl-1.0.11 */ = {
+			isa = PBXGroup;
+			children = (
+				BBEF099B1648674D00864F80 /* api */,
+				BBEF09A01648674D00864F80 /* yajl */,
+				BBEF09A51648674D00864F80 /* yajl.c */,
+				BBEF09A61648674D00864F80 /* yajl_alloc.c */,
+				BBEF09A71648674D00864F80 /* yajl_alloc.h */,
+				BBEF09A81648674D00864F80 /* yajl_buf.c */,
+				BBEF09A91648674D00864F80 /* yajl_buf.h */,
+				BBEF09AA1648674D00864F80 /* yajl_bytestack.h */,
+				BBEF09AB1648674D00864F80 /* yajl_encode.c */,
+				BBEF09AC1648674D00864F80 /* yajl_encode.h */,
+				BBEF09AD1648674D00864F80 /* yajl_gen.c */,
+				BBEF09AE1648674D00864F80 /* yajl_lex.c */,
+				BBEF09AF1648674D00864F80 /* yajl_lex.h */,
+				BBEF09B01648674D00864F80 /* yajl_parser.c */,
+				BBEF09B11648674D00864F80 /* yajl_parser.h */,
+				BBEF09B21648674D00864F80 /* yajl_version.c */,
+			);
+			path = "yajl-1.0.11";
+			sourceTree = "<group>";
+		};
+		BBEF099B1648674D00864F80 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				BBEF099C1648674D00864F80 /* yajl_common.h */,
+				BBEF099D1648674D00864F80 /* yajl_gen.h */,
+				BBEF099E1648674D00864F80 /* yajl_parse.h */,
+				BBEF099F1648674D00864F80 /* yajl_version.h */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		BBEF09A01648674D00864F80 /* yajl */ = {
+			isa = PBXGroup;
+			children = (
+				BBEF09A11648674D00864F80 /* yajl_common.h */,
+				BBEF09A21648674D00864F80 /* yajl_gen.h */,
+				BBEF09A31648674D00864F80 /* yajl_parse.h */,
+				BBEF09A41648674D00864F80 /* yajl_version.h */,
+			);
+			path = yajl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +439,7 @@
 				B5901B94101A294400CF32FA /* MainWindow.xib in Resources */,
 				B5901B96101A294400CF32FA /* OAuthTwitterDemoViewController.xib in Resources */,
 				B52DC406160A4237000A2A1B /* Default-568h@2x.png in Resources */,
+				BB2D459F1649BA9F006EE3C1 /* twitter-bird-light-bgs.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +469,20 @@
 				B54ED4B41135F10F0095DD71 /* MGTwitterXMLParser.m in Sources */,
 				B54ED4B61135F10F0095DD71 /* NSData+Base64.m in Sources */,
 				B54ED4B71135F10F0095DD71 /* NSString+UUID.m in Sources */,
+				BBEF09941648670500864F80 /* MGTwitterYAJLParser.m in Sources */,
+				BBEF09951648670500864F80 /* MGTwitterStatusesYAJLParser.m in Sources */,
+				BBEF09961648670500864F80 /* MGTwitterUsersYAJLParser.m in Sources */,
+				BBEF09971648670500864F80 /* MGTwitterMessagesYAJLParser.m in Sources */,
+				BBEF09981648670500864F80 /* MGTwitterMiscYAJLParser.m in Sources */,
+				BBEF09991648670500864F80 /* MGTwitterSearchYAJLParser.m in Sources */,
+				BBEF09B31648674D00864F80 /* yajl.c in Sources */,
+				BBEF09B41648674D00864F80 /* yajl_alloc.c in Sources */,
+				BBEF09B51648674D00864F80 /* yajl_buf.c in Sources */,
+				BBEF09B61648674D00864F80 /* yajl_encode.c in Sources */,
+				BBEF09B71648674D00864F80 /* yajl_gen.c in Sources */,
+				BBEF09B81648674D00864F80 /* yajl_lex.c in Sources */,
+				BBEF09B91648674D00864F80 /* yajl_parser.c in Sources */,
+				BBEF09BA1648674D00864F80 /* yajl_version.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

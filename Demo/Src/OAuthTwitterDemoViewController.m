@@ -10,8 +10,8 @@
 #import "SA_OAuthTwitterEngine.h"
 
 
-#define kOAuthConsumerKey				@""		//REPLACE ME
-#define kOAuthConsumerSecret			@""		//REPLACE ME
+#define kOAuthConsumerKey				@"z1DneIOaDbp0SyDfFo2Isg"		//REPLACE ME
+#define kOAuthConsumerSecret			@"ikDkCbNDib7922SH4w0MJiCqBrqFmuIJTxBcOypHI"		//REPLACE ME
 
 @implementation OAuthTwitterDemoViewController
 
@@ -48,6 +48,7 @@
 #pragma mark TwitterEngineDelegate
 - (void) requestSucceeded: (NSString *) requestIdentifier {
 	NSLog(@"Request %@ succeeded", requestIdentifier);
+   
 }
 
 - (void) requestFailed: (NSString *) requestIdentifier withError: (NSError *) error {
@@ -73,10 +74,62 @@
 	if (controller) 
 		[self presentModalViewController: controller animated: YES];
 	else {
-		[_engine sendUpdate: [NSString stringWithFormat: @"Already Updated. %@", [NSDate date]]];
+		//[_engine sendUpdate: [NSString stringWithFormat: @"Already Updated. %@", [NSDate date]]];
 	}
+    
+    users = [[NSMutableArray alloc] init];
+
 
 }
+- (void)statusesReceived:(NSArray *)statuses forRequest:(NSString *)connectionIdentifier
+{
 
+    users = [statuses copy];
+    [table reloadData];
+}
 
+- (void)directMessagesReceived:(NSArray *)messages forRequest:(NSString *)connectionIdentifier
+{
+}
+- (void)userInfoReceived:(NSArray *)userInfo forRequest:(NSString *)connectionIdentifier
+{
+    users = [[userInfo objectAtIndex:0] objectForKey:@"ids"];
+    [table reloadData];
+}
+- (void)miscInfoReceived:(NSArray *)miscInfo forRequest:(NSString *)connectionIdentifier
+{
+    users = [miscInfo copy];
+}
+-(IBAction)touch:(id)sender
+{
+    [_engine getFollowersIncludingCurrentStatus:YES ];
+    
+}
+#pragma mark - Table View Delegate Methods
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return kCellHeight;
+}
+#pragma mark - UITableView Datasource Methods
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [users count];
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+    }
+    
+    cell.textLabel.text = @"test";
+    
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%d",(int)[users objectAtIndex:indexPath.row]];
+    return cell;
+
+    
+}
 @end

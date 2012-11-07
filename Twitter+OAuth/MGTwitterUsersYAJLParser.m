@@ -23,7 +23,15 @@
 	}
 	else if (_user)
 	{
-		[_user setObject:value forKey:key];
+        if(![key isEqualToString:@"ids"])
+        {
+            [_user setObject:value forKey:key];
+        }
+        else
+        {
+            [_users addObject:value];
+            [_user setObject:_users forKey:key];
+        }
 #if DEBUG_PARSING
 		NSLog(@"user:   user: %@ = %@ (%@)", key, value, NSStringFromClass([value class]));
 #endif
@@ -39,6 +47,7 @@
 	if (! _user)
 	{
 		_user = [[NSMutableDictionary alloc] initWithCapacity:0];
+        _users = [[NSMutableArray alloc] initWithCapacity:0];
 	}
 	else
 	{
